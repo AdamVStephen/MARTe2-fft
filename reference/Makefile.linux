@@ -1,0 +1,8 @@
+# $Id: Makefile.linux,v 1.2 2015/06/12 11:35:59 dkarkin Exp $
+
+TARGET=linux
+
+include Makefile.inc
+
+LIBRARIES   += -L../../../BaseLib2/$(TARGET) -lBaseLib2 -lfftw3f
+LIBRARIES +=  -lm -ldl -lnsl -lpthread -lrt -lncurses
